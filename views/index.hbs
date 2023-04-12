@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+
+{{#if file}}
+<a href="uploads/{{file}}"><img src="uploads/{{file}}"></a>
+{{/if}}
+
+<form action="/" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Carica un file</label>
+        <input class="form-control" type="file" id="formFile" name="file">
+    </div>
+    <div class="mb-3">
+
+        <button class="btn btn-primary">Invia</button>
+    </div>
+</form>
